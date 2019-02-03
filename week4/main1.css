@@ -1,0 +1,30 @@
+body {
+    margin: 0 auto;
+}
+
+header {
+    border: 1px solid black;
+    height: 80px;
+    background-color: grey;
+}
+
+.title1 {
+    margin: auto;
+    text-align: center;
+    width: 80px;
+    border: 1px solid black;
+}
+
+.logo {
+    margin: auto;
+    text-align: center;
+    width: 30px;
+    border: 1px solid black;
+}
+
+nav {
+    height: 50px;
+    width: 80%;
+    background-color: green;
+}
+
