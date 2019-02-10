@@ -1,8 +1,5 @@
 # My Portfolio
 BYU-I CIT 230 semester work
 
-Week 1:
-Week 2:
-Week 3:
-Week 4:
-Week 5:
+Week 4 link: https://github.com/parhamb11/CIT230/tree/master/week4
+Week 5 link: https://github.com/parhamb11/CIT230/tree/master/week5
