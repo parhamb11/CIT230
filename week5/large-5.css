@@ -1,0 +1,145 @@
+body {
+    margin: 0 auto;
+}
+
+header {
+    height: 80px;
+    background-color: lightgreen;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.title {
+    height: 80px;
+    width: 60%;
+    float: left;  
+}
+
+.title1 {   
+    width: 40%;
+    height: 60px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.title1 h3 {
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+    line-height: 6px;
+    color: white;
+    margin-top: 20px
+}
+
+.title1 p {
+    font-size: 10px;
+    color: green;
+}
+
+.logo {
+    height: 80px;
+    width: 40%;
+    float: left;
+}
+
+.logo1 {
+    width: 60px;
+    height: 60px;
+    float: right;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+.logo1 img {
+    width: 100%;
+    height: 100%;
+}
+
+nav {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: #33CC66;
+    width: 100%;
+    height: 25px;
+  }
+  
+  li {
+    display: inline-block;
+  }
+  
+  li a {
+    color: white;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color: #4CAF50;
+  }
+
+.selectedtown {
+    height: 40px;
+}
+
+.townname{
+    margin: 0 auto;
+    font-size: 30px;
+    height: 35px;
+    width: 30%;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.mainimage{
+    height: 300px;
+}
+
+.summary1 {
+    border: 1px solid black;
+    float: left;
+    height: 150px;
+    margin-top: 20px;
+    width: 200px;
+    margin-left: 20px;
+    background-color: green;
+    text-align: center;
+    opacity: 0.6;
+}
+
+.backgroundpic {
+    margin: 0 auto;
+    height: 260px;
+    width: 50%;
+    border: thin solid black;
+    background-color: red;
+    background-image: url("preston.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.summary1 h3 {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    line-height: 6px;
+    color: white;
+    margin-top: 20px
+}
+
+.summary1 p {
+    font-size: 15px;
+    color: white;
+}
