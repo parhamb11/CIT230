@@ -3,28 +3,222 @@ body {
 }
 
 header {
-    border: 1px solid black;
     height: 80px;
-    background-color: grey;
+    background-color: lightgreen;
+    margin: 0 auto;
+    text-align: center;
 }
 
-.title1 {
-    margin: auto;
-    text-align: center;
-    width: 80px;
-    border: 1px solid black;
+.title {
+    height: 80px;
+    width: 60%;
+    float: left;  
+}
+
+.title1 {   
+    width: 40%;
+    height: 60px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.title1 h3 {
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+    line-height: 6px;
+    color: white;
+    margin-top: 20px
+}
+
+.title1 p {
+    font-size: 10px;
+    color: green;
 }
 
 .logo {
-    margin: auto;
-    text-align: center;
-    width: 30px;
-    border: 1px solid black;
+    height: 80px;
+    width: 40%;
+    float: left;
+}
+
+.logo1 {
+    width: 60px;
+    height: 60px;
+    float: right;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+.logo1 img {
+    width: 100%;
+    height: 100%;
 }
 
 nav {
-    height: 50px;
-    width: 80%;
-    background-color: green;
+    height: 168px;
+    background-color:#33CC66;
 }
 
+.home {
+    width: 100%;
+    height: 22px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 6px;
+    color: white;
+}
+
+.preston {
+    width: 100%;
+    height: 22px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 6px;
+    color: white;
+    background-color: #009933;
+}
+
+.sodasprings {
+    width: 100%;
+    height: 22px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 6px;
+    color: white;
+}
+
+.fishhaven {
+    width: 100%;
+    height: 22px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 6px;
+    color: white;
+}
+
+.stormcenter {
+    width: 100%;
+    height: 22px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 6px;
+    color: white;
+}
+
+.gallery {
+    width: 100%;
+    height: 22px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 6px;
+    color: white;
+}
+
+.selectedtown {
+    height: 35px;
+}
+
+.townname{
+    margin: 0 auto;
+    font-size: 30px;
+    height: 35px;
+    width: 30%;
+    text-align: center;
+}
+
+.mainimage{
+    height: 300px;
+    background-color: aqua;
+}
+
+.summary1 {
+    border: 1px solid black;
+    float: left;
+    height: 260px;
+    margin-top: 20px;
+    width: 45%;
+    margin-left: 20px;
+    background-color: grey;
+}
+
+.backgroundpic {
+    margin: 0 auto;
+    height: 260px;
+    width: 50%;
+    border: thin solid black;
+    background-color: red;
+}
+
+.fiveday {
+    background-color: blueviolet;
+    height: 80px;
+}
+
+.fivedayfor {
+    border: thin solid black;
+    background-color: grey;
+    width: 50%;
+    height: 58px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.article {
+    background-color: orange;
+    height: 600px;
+}
+
+.articlemain {
+    background-color: grey;
+    height: 600px;
+    border: thin black solid;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.articletop {
+    background-color: yellow;
+    height: 300px;
+}
+
+.articlewords {
+    border: thin solid black;
+    background-color: grey;
+    border: 1px solid black;
+    width: 90%;
+    height: 270px;
+    margin: 0 auto;
+}
+
+.articlebottom {
+    background-color: purple;
+    height: 300px;
+}
+
+.articlepic {
+    height: 270px;
+    background-color: lightcyan;
+    border: 1px solid black;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.map {
+    height: 150px;
+    background-color: aquamarine;
+}
+
+.contactinfo {
+    margin: 0 auto;
+    border: thin solid black;
+    height: 150px;
+    width: 50%;
+}
+
+footer {
+    height: 25px;
+    background-color: pink;
+    text-align: center;
+}
