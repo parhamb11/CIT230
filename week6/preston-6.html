@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>The Weather Site Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="normalize.css" />
+    <link rel="stylesheet" type="text/css" media="(max-width:865px)" href="small-5.css" />
+    <link rel="stylesheet" type="text/css" media="(min-width:866px)" href="large-5.css" />
+    <script src="currentdate.js"></script>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <div class="logo1">
+            <img src="weather.png" alt="logo">
+        </div>
+    </div>
+    <div class="title">
+        <div class="title1">
+            <h3><b>The Weather Site</b></h3>
+            <p><b>Bringing you the most accurate and up to date weather forecasts</b></p>
+        </div>
+    </div>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a class="active" href="#news">Preston</a></li>
+        <li><a href="#contact">Soda Springs</a></li>
+        <li><a href="#about">Fish Haven</a></li>
+        <li><a href="#about">Storm Center</a></li>
+        <li><a href="#about">Gallery</a></li>
+    </ul>
+</nav>
+
+<div class="selectedtown">
+    <div class="townname">Preston Idaho</div>
+</div>
+
+<div class="mainimage">
+    <div class="backgroundpic">
+        <div class="summary1"><h3><u>Weather Summary</u></h3><p>Currently: Sunny<br>High: 76<br>Wind Chill: 78<br>Humidity: 69%<br>Wind Speed: 5 mph</p></div>
+    </div>
+</div>
+
+<div class="fivedaytitle"><b>Five Day Forecast</b></div>
+
+<div class="fiveday">
+    <div class="fivedaycast">
+        <table id="fivedaytable">
+            <tr>
+                <th>Wed</th>
+                <th>Thur</th>
+                <th>Fri</th>
+                <th>Sat</th>
+                <th>Sun</th>
+            </tr>
+            <tr>
+                <td><img src="snow.png" class="snow1" alt="snow"><br>22</td>
+                <td><img src="snow.png" class="snow1" alt="snow"><br>19</td>
+                <td><img src="snow.png" class="snow1" alt="snow"><br>22</td>
+                <td><img src="snow.png" class="snow1" alt="snow"><br>20</td>
+                <td><img src="snow.png" class="snow1" alt="snow"><br>23</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<div class="articlebody">
+    <div class="article">
+        <div class="articlewords">
+            <div class="articleparagraph">
+                <h3>Article</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eleifend lacus sit amet nulla eleifend finibus. Proin sodales cursus purus quis blandit. Curabitur massa lectus, auctor tristique elit sed, facilisis gravida lectus. Vestibulum nec est efficitur, malesuada augue et, vulputate leo. Quisque placerat risus ex, gravida ultrices dolor ultricies ut. Morbi ornare eleifend eleifend. Sed scelerisque lacinia ligula ac aliquet. Maecenas dui tellus, volutpat in sodales a, laoreet et mauris. In luctus, orci eget faucibus scelerisque, nisl justo egestas diam, a condimentum purus urna eget urna.</p>
+            </div>
+        </div>
+        <div class="articlepic">
+            <div class="articlepic1"></div>
+        </div>
+    </div>
+</div>
+
+<div class="informationbody">
+    <div class="information">
+        <div class="map1">
+            <div class="mappic">Map</div>
+        </div>
+        <div class="contactinfo">
+            <div class="contacts">
+                <h3>Contact Information</h3>
+                <p>address</p>
+                <p>Phone Number / Email</p>
+            </div>
+        </div>
+    </div>    
+</div>
+
+<footer>
+    <p id="currentdate"></p>
+</footer>
+
+<script>currentDate();</script>   
+</body>
+</html>
