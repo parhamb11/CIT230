@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>The Weather Site Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="style/small-10.css" />
+    <link rel="stylesheet" type="text/css" href="style/large-10.css" />
+    <script src="java/currentdate.js"></script>
+    <script src="java/toggleMenu.js"></script>
+    <script src="java/windchill.js"></script>
+    <script src="java/adjustRating.js"></script>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <div class="logo1">
+            <img src="images/weather.png" alt="logo">
+        </div>
+    </div>
+    <div class="title">
+        <div class="title1">
+            <h3><b>The Weather Site</b></h3>
+            <p><b>Bringing you the most accurate and up to date weather forecasts</b></p>
+        </div>
+    </div>
+</header>
+
+<nav>
+	<ul class="navigation">
+		<li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+		<li><a href="index-10.html" title="Home">Home</a></li>
+		<li><a href="preston-10.html" title="Preston">Preston</a></li>
+		<li><a href="#" title="Soda Springs">Soda Springs</a></li>
+		<li><a href="#" title="Fish Haven">Fish Haven</a></li>
+        <li><a href="stormcenter-10.html" class="active" title="Storm Center">Storm Center</a></li>
+        <li><a href="gallery-10.html" title="Gallery">Gallery</a></li>
+	</ul>
+</nav>
+
+<div class="selectedtown">
+    <div class="townname">Storm Center</div>
+</div>
+
+<form>
+    <fieldset>
+        <legend>Personal Information</legend>
+        Name: <input type="text" placeholder="Jon Tron"><br>
+        Email (optional): <input type="text"  placeholder="example@hotmail.com"><br>
+        Phone Number: <input type="number" placeholder="999-999-9999"><br>
+        Zip Code: <input type="number" placeholder="83440">
+    </fieldset>
+</form>
+
+<form>
+    <fieldset>
+        <legend>Storm Information</legend>
+        Storm Date: <input type="date" placeholder="mm/dd/yyyy"><br>
+        Storm Type: <input name="stormtype" id="stormtype" type="text" placeholder="Select One..." list="stormtypelist"><br>
+            <datalist id="stormtypelist">
+                <option value="Derecho">
+                <option value="Flooding">
+                <option value="Hail Storm">
+                <option value="Snow Storm">
+                <option value="Huricane">
+                <option value="Lightning">
+                <option value="Thunderstorm">
+            </datalist>
+        Rating (1 to 10): <input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+            <span id="ratingvalue">1</span><br><br>
+        Storm Region:
+            <select name="stormregion" id="stormregion">
+                <option disabled selected>Select Region...</option>
+                <option value="preston">Preston</option>
+                <option value="soda">Soda Springs</option>
+                <option value="fish">Fish Haven</option>
+            </select><br>
+        Are You In Danger? (Select one)
+            <span class="danger">
+                <input type="radio" name="dangerlvl" id="dangeryes" value="y">
+                    <label for="dangeryes">Yes </label>
+                <input type="radio" name="dangerlvl" id="dangermaybe" value="m">
+                    <label for="dangermaybe">Maybe </label>
+                <input type="radio" name="dangerlvl" id="dangerno" value="n">
+                    <label for="dangerno">No </label>
+            </span><br><br>
+        Comments (Optional)
+            <textarea name="comments" id="comments" placeholder="Additional Info..."></textarea><br>
+        <input type="submit" value="Submit">
+    </fieldset>
+</form>
+
+<footer>
+    <div>&copy; 2019 Brandon Parham</div> 
+    <div><a href="#">Terms of Use</a></div>
+    <div><span id="currentdate"> </span></div>
+</footer>
+
+<script>currentDate(); findWindChill();</script>   
+</body>
+</html>

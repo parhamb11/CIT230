@@ -1,0 +1,427 @@
+@media only screen and (min-width: 45em) {
+
+    body {
+        margin: 0 auto;
+        background-color: rgb(255, 92, 92);
+    }
+    
+    header {
+        height: 80px;
+        background-color: rgb(134, 15, 15);
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    .title {
+        height: 80px;
+        width: 60%;
+        float: left;  
+    }
+    
+    .title1 {   
+        width: 50%;
+        height: 60px;
+        float: left;
+        margin-top: 10px;
+    }
+    
+    .title1 h3 {
+        font-size: 26px;
+        margin: 0;
+        padding: 0;
+        line-height: 6px;
+        color: white;
+        margin-top: 8px;
+        margin-bottom: 10px;
+    }
+    
+    .title1 p {
+        font-size: 10px;
+        color: rgb(252, 52, 52);
+    }
+    
+    .logo {
+        height: 80px;
+        width: 40%;
+        float: left;
+    }
+    
+    .logo1 {
+        width: 60px;
+        height: 60px;
+        float: right;
+        margin-top: 10px;
+        margin-right: 5px;
+    }
+    
+    .logo1 img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .navigation li:first-child { 
+        display: none;	
+    }
+         
+    .navigation li { 
+        display: inline-block; 
+        margin-right: 1rem;
+    }	
+     
+    .navigation li a { 
+        color: white;
+    }
+    
+    .active {
+        color: #ffe348;
+        background-color: rgb(134, 15, 15);;
+    }
+    .active:hover{
+        text-shadow: 0 0 4px #ffe348, 0 0 6px #FFFFFF;
+    }
+    .active:visited {
+        color: rgb(252, 52, 52);
+        background-color: #282828;
+    }
+    
+    .selectedtown {
+        height: 40px;
+    }
+    
+    .townname{
+        margin: 0 auto;
+        font-size: 30px;
+        height: 35px;
+        width: 30%;
+        text-align: center;
+        margin-top: 5px;
+    }
+    
+    .mainimage{
+        height: 268px;
+    }
+    
+    .summary1 {
+        border: 1px solid black;
+        float: left;
+        height: 150px;
+        margin-top: 20px;
+        width: 200px;
+        margin-left: 20px;
+        background-color: rgb(134, 15, 15);
+        text-align: center;
+        opacity: 0.6;
+    }
+    
+    .backgroundpic {
+        margin: 0 auto;
+        height: 260px;
+        width: 50%;
+        border: thin solid black;
+        background-color: red;
+        background-image: url("../images/sodasprings.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .summary1 h3 {
+        font-size: 20px;
+        margin: 0;
+        padding: 0;
+        line-height: 6px;
+        color: white;
+        margin-top: 20px
+    }
+    
+    .summary1 p {
+        font-size: 15px;
+        color: white;
+    }
+    
+    .fiveday {
+        display: block;
+        margin: 0;
+        width:100%;
+        border-radius: .2rem;
+        text-align: center;
+    }
+    
+    .fiveday h2 {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .forecastbox {
+        display:inline-flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        margin: .25rem;
+        padding: .5rem;
+        width: 35%;
+    }
+    .forecast {
+        width: 18%;
+        height: 100%;
+        border: 1px solid #282828;
+        border-radius: 3px;
+        background-color: white;
+    }
+    
+    .forecast img {
+        width: 100%;
+    }
+    
+    .snow1 {
+        width: 20px;
+        height: 20px;  
+    }
+    
+    .article {
+        height: 260px;
+    }
+    
+    .articlebody {
+        width: 50%;
+        border: thin solid black;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+    
+    .articlewords {
+        float: left;
+        width: 60%;
+        height: 258px;
+    }
+    
+    .articlepic {
+        float: left;
+        width: 40%;
+        height: 258px;
+    }
+    
+    .articleparagraph {
+        width: 90%;
+        height: 258px;
+        margin: 0 auto;
+        padding: 0;
+    }
+    
+    .articleparagraph h3 {
+        font-size: 25px;
+        line-height: 2px;
+    }
+    
+    .articleparagraph p {
+        font-size: 12px;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .articlepic1 {
+        width: 90%;
+        height: 220px;
+        margin-top: 18px;
+        margin-left: 10px;
+        background-image: url("../images/sodaimage.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+    
+    .informationbody {
+        height: 260px;
+    }
+    
+    .information {
+        width: 50%;
+        height: 258px;
+        border: thin solid black;
+        margin: 0 auto;
+        margin-top: 10px;
+        background-color: rgb(134, 15, 15);
+    }
+    
+    .map1 {
+        float: left;
+        width: 40%;
+        height: 258px;
+    }
+    
+    .contactinfo {
+        float: left;
+        width: 60%;
+        height: 258px;
+    }
+    
+    .mappic {
+        border: thin solid black;
+        width: 220px;
+        background-image: url("../images/sodamap.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        height: 220px;
+        margin-left: 15px;
+        margin-top: 19px;
+    }
+    
+    .contacts {
+        width: 90%;
+        height: 258px;
+        margin: 0 auto;
+        padding: 0;
+        text-align: center;   
+    }
+    
+    footer {
+        margin: 0;
+        background-color: rgb(36, 16, 16);
+        color: #FFFFFF;
+        font-size: .7rem;
+        text-align: center;
+        width:100%;
+        display: flex;
+        justify-content: space-between;
+        flex-flow: row nowrap;
+        border-style: 2px solid rgb(36, 16, 16);
+        border-radius: 0 0 .2rem .2rem;
+    }
+    
+    footer div{
+        padding: .5rem;
+        display: inline-flex;
+    }
+    footer a {
+        color: #CEE5F2;
+        text-decoration: none;
+        text-shadow: 1px 1px 2px #000000;
+    }
+    footer a:hover{
+        color: #ffffff;
+        text-shadow: 0 0 6px #ffe348;
+    }
+    footer a:visited{
+        color: #ffffff;
+    }
+    footer a:focus{
+        color: #cee5f2;
+    }
+    footer a:active{
+        color: #ffe348;
+    }
+    
+    .gallery_grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 1rem;
+    }
+    .gallery_grid figure:hover {
+        box-shadow: 0 .5rem 1rem #666666;
+    }
+    
+    fieldset {
+        border: thin solid black;
+        width: 50%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+    
+    legend {
+        padding: 0.2em 0.5em;
+        color:black;
+        text-align: center;
+    }
+    
+    input[type=text], select {
+        width: 100%;
+        padding: 10px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 2px solid black;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    
+    input[type=number], select {
+        width: 100%;
+        padding: 10px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 2px solid black;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    
+    input[type=date], select {
+        width: 100%;
+        padding: 10px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 2px solid black;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    
+    input[type=submit] {
+        width: 100%;
+        background-color: rgb(134, 15, 15);
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    input[type=submit]:hover {
+        background-color: black;
+    }
+    
+    #comments {
+        width: 100%;
+        height: 80px;
+        border: 2px solid black;
+        border-radius: 4px;
+    }
+
+    #townInfo {
+        flex-flow: row nowrap;
+    }
+    .townbox {
+        width:100%;
+        flex-flow: column nowrap;
+        align-self: stretch;
+        align-items: center;
+        max-height: 100%;
+        margin-bottom: 0;
+    }
+    .townbox div {
+        width:100%;
+        margin-bottom: 1rem;
+    }
+    .townbox a {
+        width:100%;
+        margin-top: auto;
+    }
+
+    .fiveday {
+        display: block;
+    }
+    #forecastTable {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        border-radius: .5em;
+        box-shadow: 2px 2px 30px #f3f5e9;
+        padding-top: .5em;
+        background-color: #231f20;
+    }
+    #forecastTable, th, td {
+        color: #f3f5e9;
+        text-align: center;
+        padding: .5em .5em 0 .5em;
+    }
+    
+    }

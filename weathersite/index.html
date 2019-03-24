@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>The Weather Site Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="style/small.css" />
+    <link rel="stylesheet" type="text/css" href="style/large.css" />
+    <script src="java/currentdate.js"></script>
+    <script src="java/toggleMenu.js"></script>
+    <script src="java/windchill.js"></script>
+    <script src="java/towndata.js"></script>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <div class="logo1">
+            <img src="images/weather.png" alt="logo">
+        </div>
+    </div>
+    <div class="title">
+        <div class="title1">
+            <h3><b>The Weather Site</b></h3>
+            <p><b>Bringing you the most accurate and up to date weather forecasts</b></p>
+        </div>
+    </div>
+</header>
+
+<nav>
+	<ul class="navigation">
+		<li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+		<li><a href="index.html" class="active" title="Home">Home</a></li>
+		<li><a href="preston.html" title="Preston">Preston</a></li>
+		<li><a href="sodasprings.html" title="Soda Springs">Soda Springs</a></li>
+		<li><a href="fishhaven.html" title="Fish Haven">Fish Haven</a></li>
+        <li><a href="stormcenter.html" title="Storm Center">Storm Center</a></li>
+        <li><a href="gallery.html" title="Gallery">Gallery</a></li>
+	</ul>
+</nav>
+
+<div class="selectedtown">
+    <div class="townname">Home</div>
+</div>
+
+<section id="townInfo"></section>
+
+<div class="informationbody">
+    <div class="information">
+        <div class="map1">
+            <div class="mappic"></div>
+        </div>
+        <div class="contactinfo">
+            <div class="contacts">
+                <h3>Contact Information</h3>
+                <p>
+                    196 S State St<br>
+                    Preston, ID 83263
+                </p>
+                <p>
+                    123-456-7890<br>
+                    weathersite@hotmail.com
+                </p>
+            </div>
+        </div>
+    </div>    
+</div>
+
+<footer>
+    <div>&copy; 2019 Brandon Parham</div> 
+    <div><a href="#">Terms of Use</a></div>
+    <div><span id="currentdate"> </span></div>
+</footer>
+
+<script>currentDate(); townData();</script>   
+</body>
+</html>

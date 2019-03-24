@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>The Weather Site Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="style/smallfish.css" />
+    <link rel="stylesheet" type="text/css" href="style/largefish.css" />
+    <script src="java/currentdate.js"></script>
+    <script src="java/toggleMenu.js"></script>
+    <script src="java/windchill.js"></script>
+    <script src="java/weatherapi.js"></script>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <div class="logo1">
+            <img src="images/weather.png" alt="logo">
+        </div>
+    </div>
+    <div class="title">
+        <div class="title1">
+            <h3><b>The Weather Site</b></h3>
+            <p><b>Bringing you the most accurate and up to date weather forecasts</b></p>
+        </div>
+    </div>
+</header>
+
+<nav>
+	<ul class="navigation">
+		<li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+		<li><a href="index.html" title="Home">Home</a></li>
+		<li><a href="preston.html" title="Preston">Preston</a></li>
+		<li><a href="sodasprings.html" title="Soda Springs">Soda Springs</a></li>
+		<li><a href="fishhaven.html" class="active" title="Fish Haven">Fish Haven</a></li>
+        <li><a href="stormcenter.html" title="Storm Center">Storm Center</a></li>
+        <li><a href="gallery.html" title="Gallery">Gallery</a></li>
+	</ul>
+</nav>
+
+<div class="selectedtown">
+    <div class="townname">Fish Haven</div>
+</div>
+
+<div class="mainimage">
+    <div class="backgroundpic">
+        <div class="summary1">
+            <h3><u>Weather Summary</u></h3>
+            <p>Currently: Clear<br>
+            Temperature: <span id="currentTemp"></span>&deg; F<br>
+            Wind Chill: <span id="windchill"> </span><br>
+            Humidity: 49%<br>
+            Wind Speed: <span id="speed">2.34</span>mph</p>
+        </div>
+    </div>
+</div>
+
+<div class="linkweather">
+    <p class="actuallink">Weather Provided By: 
+    <a href="https://openweathermap.org">OpenWeatherMap.org</a></p>
+</div>
+
+<div class="fiveday">
+        <h2>Five Day Forecast</h2>
+        <div class="forecastbox">
+            <img class="forecast" src="images/monday.png" alt="Monday">
+            <img class="forecast" src="images/tuesday.png" alt="Tuesday">
+            <img class="forecast" src="images/wednesday.png" alt="Wednesday">
+            <img class="forecast" src="images/thursday.png" alt="Thursday">
+            <img class="forecast" src="images/friday.png" alt="Friday">
+        </div>
+</div>
+
+<div class="articlebody">
+    <div class="article">
+        <div class="articlewords">
+            <div class="articleparagraph">
+                <h3>Article</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eleifend lacus sit amet nulla eleifend finibus. Proin sodales cursus purus quis blandit. Curabitur massa lectus, auctor tristique elit sed, facilisis gravida lectus. Vestibulum nec est efficitur, malesuada augue et, vulputate leo. Quisque placerat risus ex, gravida ultrices dolor ultricies ut. Morbi ornare eleifend eleifend. Sed scelerisque lacinia ligula ac aliquet. Maecenas dui tellus, volutpat in sodales a, laoreet et mauris. In luctus, orci eget faucibus scelerisque, nisl justo egestas diam, a condimentum purus urna eget urna.</p>
+            </div>
+        </div>
+        <div class="articlepic">
+            <div class="articlepic1"></div>
+        </div>
+    </div>
+</div>
+
+<div class="informationbody">
+    <div class="information">
+        <div class="map1">
+            <div class="mappic"></div>
+        </div>
+        <div class="contactinfo">
+            <div class="contacts">
+                <h3>Contact Information</h3>
+                <p>
+                    196 S State St<br>
+                    Preston, ID 83263
+                </p>
+                <p>
+                    123-456-7890<br>
+                    weathersite@hotmail.com
+                </p>
+            </div>
+        </div>
+    </div>    
+</div>
+
+<footer>
+    <div>&copy; 2019 Brandon Parham</div> 
+    <div><a href="#">Terms of Use</a></div>
+    <div><span id="currentdate"> </span></div>
+</footer>
+
+<script>currentDate(); findWindChill();</script>   
+</body>
+</html>

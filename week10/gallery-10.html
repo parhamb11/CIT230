@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>The Weather Site Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="style/small-10.css" />
+    <link rel="stylesheet" type="text/css" href="style/large-10.css" />
+    <script src="java/currentdate.js"></script>
+    <script src="java/toggleMenu.js"></script>
+    <script src="java/windchill.js"></script>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <div class="logo1">
+            <img src="images/weather.png" alt="logo">
+        </div>
+    </div>
+    <div class="title">
+        <div class="title1">
+            <h3><b>The Weather Site</b></h3>
+            <p><b>Bringing you the most accurate and up to date weather forecasts</b></p>
+        </div>
+    </div>
+</header>
+
+<nav>
+	<ul class="navigation">
+		<li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+		<li><a href="index-10.html" title="Home">Home</a></li>
+		<li><a href="preston-10.html" title="Preston">Preston</a></li>
+		<li><a href="#" title="Soda Springs">Soda Springs</a></li>
+		<li><a href="#" title="Fish Haven">Fish Haven</a></li>
+        <li><a href="stormcenter-10.html" title="Storm Center">Storm Center</a></li>
+        <li><a href="gallery-10.html" class="active" title="Gallery">Gallery</a></li>
+	</ul>
+</nav>
+
+<div class="selectedtown">
+    <div class="townname">Gallery</div>
+</div>
+
+<div class="gallery_grid">
+        <figure>
+            <img alt="Sunny Day"
+            srcset="images/sunny.jpg 300w"
+            sizes="(max-width: 500px) 300px, 
+                    (min-width:501px) 50vw,
+                    (min-width:1025px) 33vw"
+            src="images/sunny.jpg">
+            <figcaption>Sunny Day</figcaption>
+        </figure>
+        <figure>
+            <img alt="Cloudy Day"
+            srcset="images/cloudy.jpg 300w"
+             sizes="(max-width: 500px) 300px, 
+                    (min-width:501px) 50vw,
+                    (min-width:1025px) 33vw"
+            src="images/cloudy.jpg">
+            <figcaption>Cloudy Day</figcaption>
+        </figure>
+        <figure>
+            <img alt="Snowy"
+            srcset="images/snowy.jpg 300w"
+            sizes="(max-width: 500px) 300px, 
+                    (min-width:501px) 50vw,
+                    (min-width:1025px) 33vw"
+            src="images/snowy.jpg">
+            <figcaption>Look at it snow!</figcaption>
+        </figure>
+        <figure>
+            <img alt="Lightning"
+            srcset="images/lightning.jpg 300w"
+            sizes="(max-width: 500px) 300px, 
+                    (min-width:501px) 50vw,
+                    (min-width:1025px) 33vw"
+            src="images/lightning.jpg">
+            <figcaption>Look out!</figcaption>
+        </figure>
+        <figure>
+            <img alt="Rainy"
+            srcset="images/rainy.jpg 300w"
+            sizes="(max-width: 500px) 300px, 
+                    (min-width:501px) 50vw,
+                    (min-width:1025px) 33vw"
+            src="images/rainy.jpg">
+            <figcaption>Rain rain go away!</figcaption>
+        </figure>
+        <figure>
+            <img alt="Rainbow"
+            srcset="images/rainbow.jpg 300w"
+            sizes="(max-width: 500px) 300px, 
+                    (min-width:501px) 50vw,
+                    (min-width:1025px) 33vw"
+            src="images/rainbow.jpg">
+            <figcaption>Not a double rainbow...</figcaption>
+        </figure>
+</div>
+
+<footer>
+    <div>&copy; 2019 Brandon Parham</div> 
+    <div><a href="#">Terms of Use</a></div>
+    <div><span id="currentdate"> </span></div>
+</footer>
+
+<script>currentDate(); findWindChill();</script>   
+</body>
+</html>
